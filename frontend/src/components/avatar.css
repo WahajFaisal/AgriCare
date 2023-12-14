@@ -1,0 +1,45 @@
+/* Avatar.css */
+.avatar-container {
+    position: fixed;
+    top: 20%;
+    right: 70px;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+    background-color: #34db7a;
+    /* You can change the background color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Optional: Add a subtle shadow */
+}
+
+.avatar-image {
+    width: 80%;
+    /* Adjust the size of the React logo */
+    height: auto;
+}
+
+/* style.css */
+.avatar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    /* Adjust the height according to your design */
+}
+
+.avatar {
+    font-size: 50px;
+    /* Adjust the font size according to your design */
+    color: #333;
+    /* Set the color of the icon */
+}

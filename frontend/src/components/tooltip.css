@@ -1,0 +1,47 @@
+/* Tooltip.css */
+.tooltip-container {
+    /* position: relative; */
+    /* display: inline-block; */
+}
+
+.tooltip-content {
+    visibility: hidden;
+    /* width: 160px; */
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    /* position: absolute; */
+    z-index: 1;
+    top: 100%;
+    /* Updated to position below the avatar */
+    left: 0;
+    /* Updated to position to the left */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip-container:hover .tooltip-content {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Additional styles for the expert list */
+.tooltip-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tooltip-content li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.expert-avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
